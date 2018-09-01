@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+
+img {
+    float: right;
+}
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="http://www.hockeydb.com/ihdb/photos/jarome-iginla-2017-690.jpg" alt="jAROME" style="width:170px;height:170px;margin-left:15px;">
+  <h1>JAROME IGINLA</h1>
+  <p>Right Wing -- shoots R,<br>
+Born Jul 1 1977 -- Edmonton, ALTA <br>
+[41 yrs. ago] 
+Height 6.01 -- Weight 210 [185 cm/95 kg]</p>
+ 
+</div>
+
+<div class="topnav">
+  <a href="#">HOME</a>
+  <a href="#">SEARCH BY LEAGUE</a>
+  <a href="#">SEARCH BY TEAM</a>
+  <a href="#" style="float:right">CONTACT US</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>SAN JOSE AT CALGARY</h2>
+      <h5>Flames reach Stanley Cup Finals for first time in 15 years</h5>
+<img src="http://images.sportsline.com/u/photos/hockey/img7343599.jpg" alt="Trulli" width="500" height="333">
+      <p>CALGARY, Alberta -- The pandemonium began while the puck was still in play, sliding alone toward the tranquility of the San Jose Sharks' unguarded net.</p>
+      <p>When the final score of the Western Conference finals bisected the goal line as time expired, the Calgary Flames and their fans were going too crazy to notice. With one more fantastic finish, Canada's team had earned the right to play for the Cup.
+
+Captain Jarome Iginla scored his 10th playoff goal and the Flames advanced to their first Stanley Cup Finals in 15 years with a 3-1 victory over the Sharks in Game 6 Wednesday night.</p>
+    </div>
+    <div class="card">
+     <h2>NHL AWARD CEREMONY</h2>
+      <h5>Jarome Iginla of the Calgary Flames poses with his King Clancy Trophy and Maurice Richard Trophy</h5>
+      <img src="https://media.gettyimages.com/photos/jarome-iginla-of-the-calgary-flames-poses-with-his-king-clancy-trophy-picture-id51280885?k=6&m=51280885&s=612x612&w=0&h=M20Jvw2z-HrwvHbWlSKHdAbNJS6PD_JDkMHdVcW00C0=" alt="Trulli" width="500" height="333">
+      
+      <p>Jarome Iginla of the Calgary Flames poses with his King Clancy Trophy and Maurice Richard Trophy during the 2004 NHL Awards at the Convention Centre on June 12, 2004 in Toronto, Ontario. The Maurice Richard Trophy is awarded annually...</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <table id="customers">
+  <tr>
+    <th>Year</th>
+    <th>NHL</th>
+    <th>Award</th>
+  </tr>
+  <tr>
+    <td>2001-02</td>
+    <td>NHL</td>
+    <td>Art Ross Trophy</td>
+  </tr>
+  <tr>
+    <td>2001-02</td>
+    <td>NHL</td>
+    <td>Maurice "Rocket" Richard Trophy</td>
+  </tr>
+  <tr>
+    <td>2001-02</td>
+    <td>NHL</td>
+    <td>Lester B. Pearson Trophy</td>
+  </tr>
+  <tr>
+    <td>2003-04</td>
+    <td>NHL</td>
+    <td>King Clancy Memorial Trophy</td>
+  </tr>
+  <tr>
+    <td>2003-04</td>
+    <td>NHL</td>
+    <td>Maurice "Rocket" Richard Trophy</td>
+  </tr>
+  <tr>
+    <td>2008-09</td>
+    <td>NHL</td>
+    <td>Mark Messeir NHL Leadership Award</td>
+  </tr>
+ 
+  
+</table>
+      
+ 
+   
+      
+    
+  
+</div>
+
+<div class="footer">
+ <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br>
+  Phone Number:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Email:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+
+</body>
+</html>
